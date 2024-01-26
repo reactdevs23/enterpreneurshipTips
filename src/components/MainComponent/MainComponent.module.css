@@ -1,0 +1,85 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.curveImg {
+  width: 100vw;
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+.curveImg svg {
+  object-fit: cover;
+  object-position: center;
+}
+.bottomLeftIcon {
+  position: absolute;
+  left: 15%;
+  bottom: 33%;
+  max-width: 250px;
+  width: 20%;
+  z-index: -1;
+}
+.topRightIcon {
+  position: absolute;
+  right: 10%;
+  top: 24%;
+  max-width: 250px;
+  width: 20%;
+  z-index: -1;
+}
+.img {
+  max-width: 500px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+}
+.email {
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 24px;
+  border-radius: 18px;
+  transition: 0.3s;
+
+  font-weight: 700;
+}
+.button:hover {
+  transform: translateY(-3px);
+}
