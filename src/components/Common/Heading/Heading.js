@@ -10,11 +10,11 @@ const Heading = ({ heading, headingIcon, headingBg, id, fontFamily }) => {
       {id % 2 !== 0 ? (
         <div className={styles.idContainer}>#{id}</div>
       ) : (
-        <img src={headingIcon} alt="#" className={styles.headingIcon} />
+        <div className={styles.headingIcon}>{headingIcon}</div>
       )}
       <h2 className={styles.heading}>{heading}</h2>
       {id % 2 !== 0 ? (
-        <img src={headingIcon} alt="#" className={styles.headingIcon} />
+        <div className={styles.headingIcon}>{headingIcon}</div>
       ) : (
         <div className={styles.idContainer}>#{id}</div>
       )}

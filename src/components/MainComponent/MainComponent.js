@@ -19,6 +19,8 @@ const MainComponent = ({
   bottomLeftIcon,
   topRightIcon,
   totalData,
+  primaryTextColor,
+  secondaryTextColor,
 }) => {
   return (
     <section
@@ -26,6 +28,8 @@ const MainComponent = ({
       style={{
         fontFamily: bodyFontFamily,
         background: background,
+        "--primaryTextColor": primaryTextColor,
+        "--secondaryTextColor": secondaryTextColor,
       }}
     >
       <Heading id={id} {...headingInfo} fontFamily={headerFontFamily} />
@@ -40,10 +44,10 @@ const MainComponent = ({
       </div>
       {img && <img src={img} alt="#" className={styles.img} />}
       {bottomLeftIcon && (
-        <img src={bottomLeftIcon} alt="#" className={styles.bottomLeftIcon} />
+        <div className={styles.bottomLeftIcon}>{bottomLeftIcon}</div>
       )}{" "}
       {topRightIcon && (
-        <img src={topRightIcon} alt="#" className={styles.topRightIcon} />
+        <div className={styles.topRightIcon}>{topRightIcon} </div>
       )}
     </section>
   );

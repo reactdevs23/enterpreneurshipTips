@@ -33,9 +33,9 @@
   background: #000;
   border-radius: 18px;
   text-align: center;
-  color: #fff;
+  color: var(--secondaryTextColor);
 
-  padding: 10px;
+  padding: 10px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +45,7 @@
 .heading {
   font-size: 65px;
   padding: 5px 0;
+  color: var(--primaryTextColor);
 }
 
 .circleContainer {

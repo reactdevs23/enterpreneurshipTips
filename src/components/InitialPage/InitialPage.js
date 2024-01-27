@@ -10,11 +10,18 @@ const InitialPage = ({
   bodyFontFamily,
   headerFontFamily,
   background,
+  primaryTextColor,
+  secondaryTextColor,
 }) => {
   return (
     <section
       className={styles.wrapper}
-      style={{ fontFamily: bodyFontFamily, background: background }}
+      style={{
+        fontFamily: bodyFontFamily,
+        background: background,
+        "--primaryTextColor": primaryTextColor,
+        "--secondaryTextColor": secondaryTextColor,
+      }}
     >
       <div
         className={styles.headingContainer}

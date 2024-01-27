@@ -1,7 +1,9 @@
 import InitialPage from "./components/InitialPage/InitialPage";
 import MainComponent from "./components/MainComponent/MainComponent";
 
-import { img1, img2, star, sun } from "./images";
+import { img1, img2 } from "./images";
+import Star from "./images/Star";
+import Sun from "./images/Sun";
 
 //  font-family: "Poppins", sans-serif;
 //  font-family: "Inter", sans-serif;
@@ -13,30 +15,33 @@ function App() {
     img: img1,
     heading: "Enterpreneurship Tips Article",
     title: "Unlocking Success <br/> in Business",
-    curveColor: "#000",
+    primaryTextColor: "#000",
+    secondaryTextColor: "#fff",
     background: "#376D71",
   };
   const allData = {
     headerFontFamily: "'Big Shoulders Display', sans-serif",
     bodyFontFamily: "'Be Vietnam Pro', sans-serif",
+    primaryTextColor: "#000",
+    secondaryTextColor: "#fff",
     data: [
       {
         headingInfo: {
           heading: "Identify Your Passion",
-          headingIcon: sun,
+          headingIcon: <Sun color="#94c5c9" />,
           headingBg: "#94C5C9",
         },
         info: "The significance of pursuing one's passion in entrepreneurship is multifaceted and can profoundly impact an entrepreneur's journey and the success of their business.",
 
         img: img2,
-        bottomLeftIcon: star,
+        bottomLeftIcon: <Star color="#94c5c9" />,
 
         background: "#376D71",
       },
       {
         headingInfo: {
           heading: "Market Research",
-          headingIcon: sun,
+          headingIcon: <Sun color="#94c5c9" />,
           headingBg: "#94C5C9",
         },
         title: "",
@@ -53,64 +58,64 @@ function App() {
           ],
         },
         img: img2,
-        bottomLeftIcon: star,
-        topRightIcon: star,
+        bottomLeftIcon: <Star color="#94c5c9" />,
+        topRightIcon: <Star color="#94c5c9" />,
 
         background: "#376D71",
       },
       {
         headingInfo: {
           heading: "Business Plan",
-          headingIcon: sun,
+          headingIcon: <Sun color="#94c5c9" />,
           headingBg: "#94C5C9",
         },
         title: "Crafting a Solid Business",
         info: "A succesful business plan is a comprehensive document that outlines a company's goals, strategies,and operational procedures. It serves as a roadmap for the business and is essential for attracting investors,guiding internal decision-making,and ensuring the business's long-term viability.",
 
         img: img2,
-        bottomLeftIcon: star,
+        bottomLeftIcon: <Star color="#94c5c9" />,
 
         background: "#376D71",
       },
       {
         headingInfo: {
           heading: "Financial Management",
-          headingIcon: sun,
+          headingIcon: <Sun color="#94c5c9" />,
           headingBg: "#94C5C9",
         },
         title: "",
         info: "A succesful business plan is a comprehensive document that outlines a company's goals, strategies,and operational procedures. It serves as a roadmap for the business and is essential for attracting investors,guiding internal decision-making,and ensuring the business's long-term viability.",
 
         img: img2,
-        topRightIcon: star,
+        topRightIcon: <Star color="#94c5c9" />,
 
         background: "#376D71",
       },
       {
         headingInfo: {
           heading: "Build a strong network",
-          headingIcon: sun,
+          headingIcon: <Sun color="#94c5c9" />,
           headingBg: "#94C5C9",
         },
         title: "Networking for Success",
         info: "A succesful business plan is a comprehensive document that outlines a company's goals, strategies,and operational procedures. It serves as a roadmap for the business and is essential for attracting investors,guiding internal decision-making,and ensuring the business's long-term viability.",
 
         img: img2,
-        bottomLeftIcon: star,
+        bottomLeftIcon: <Star color="#94c5c9" />,
 
         background: "#376D71",
       },
       {
         headingInfo: {
           heading: "Stay Persistent",
-          headingIcon: sun,
+          headingIcon: <Sun color="#94c5c9" />,
           headingBg: "#94C5C9",
         },
         title: "",
         info: "A succesful business plan is a comprehensive document that outlines a company's goals, strategies,and operational procedures. It serves as a roadmap for the business and is essential for attracting investors,guiding internal decision-making,and ensuring the business's long-term viability.",
         email: "@reallygreatsite",
         img: img2,
-        bottomLeftIcon: star,
+        bottomLeftIcon: <Star color="#94c5c9" />,
 
         background: "#376D71",
       },
@@ -125,6 +130,8 @@ function App() {
           id={i + 1}
           headerFontFamily={allData.headerFontFamily}
           bodyFontFamily={allData.bodyFontFamily}
+          primaryTextColor={allData.primaryTextColor}
+          secondaryTextColor={allData.secondaryTextColor}
           key={i}
           totalData={allData.data.length}
         />
