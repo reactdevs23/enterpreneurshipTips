@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./Heading.module.css";
 
-const Heading = ({ heading, headingIcon, headingBg, id }) => {
+const Heading = ({ heading, headingIcon, headingBg, id, fontFamily }) => {
   return (
-    <div className={styles.headingContainer} style={{ "--color": headingBg }}>
+    <div
+      className={styles.headingContainer}
+      style={{ "--color": headingBg, fontFamily: fontFamily }}
+    >
       {id % 2 !== 0 ? (
         <div className={styles.idContainer}>#{id}</div>
       ) : (

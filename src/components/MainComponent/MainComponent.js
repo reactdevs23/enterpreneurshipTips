@@ -6,6 +6,8 @@ import SwipeButton from "../Common/SwipeButton/SwipeButton";
 import TextContainer from "../Common/TextContainer/TextContainer";
 
 const MainComponent = ({
+  headerFontFamily,
+  bodyFontFamily,
   id,
   headingInfo,
   title,
@@ -13,7 +15,6 @@ const MainComponent = ({
   task,
   img,
   email,
-  fontFamily,
   background,
   bottomLeftIcon,
   topRightIcon,
@@ -23,11 +24,11 @@ const MainComponent = ({
     <section
       className={styles.wrapper}
       style={{
-        fontFamily: fontFamily,
+        fontFamily: bodyFontFamily,
         background: background,
       }}
     >
-      <Heading id={id} {...headingInfo} />
+      <Heading id={id} {...headingInfo} fontFamily={headerFontFamily} />
       <div className={styles.container}>
         <TextContainer title={title} info={info} task={task} />
         {totalData !== id && <SwipeButton onClick={() => {}} />}

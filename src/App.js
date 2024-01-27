@@ -7,7 +7,8 @@ import { img1, img2, star, sun } from "./images";
 //  font-family: "Inter", sans-serif;
 function App() {
   const initialPage = {
-    fontFamily: "'Inter', sans-serif",
+    headerFontFamily: "'Big Shoulders Display', sans-serif",
+    bodyFontFamily: "'Be Vietnam Pro', sans-serif",
     link: "www.realygreatsite.com",
     img: img1,
     heading: "Enterpreneurship Tips Article",
@@ -16,7 +17,8 @@ function App() {
     background: "#376D71",
   };
   const allData = {
-    fontFamily: "'Inter', sans-serif",
+    headerFontFamily: "'Big Shoulders Display', sans-serif",
+    bodyFontFamily: "'Be Vietnam Pro', sans-serif",
     data: [
       {
         headingInfo: {
@@ -121,7 +123,8 @@ function App() {
         <MainComponent
           {...el}
           id={i + 1}
-          fontFamily={allData.fontFamily}
+          headerFontFamily={allData.headerFontFamily}
+          bodyFontFamily={allData.bodyFontFamily}
           key={i}
           totalData={allData.data.length}
         />

@@ -2,13 +2,24 @@ import React from "react";
 import styles from "./InitialPage.module.css";
 import { dot } from "../../images";
 
-const InitialPage = ({ heading, title, img, link, fontFamily, background }) => {
+const InitialPage = ({
+  heading,
+  title,
+  img,
+  link,
+  bodyFontFamily,
+  headerFontFamily,
+  background,
+}) => {
   return (
     <section
       className={styles.wrapper}
-      style={{ fontFamily: fontFamily, background: background }}
+      style={{ fontFamily: bodyFontFamily, background: background }}
     >
-      <div className={styles.headingContainer}>
+      <div
+        className={styles.headingContainer}
+        style={{ fontFamily: headerFontFamily }}
+      >
         <img src={dot} alt="#" className={styles.dot} />{" "}
         <h2 className={styles.heading}>{heading}</h2>
         <img src={dot} alt="#" className={styles.dot} />{" "}
